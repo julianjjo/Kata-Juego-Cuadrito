@@ -48,16 +48,16 @@ Feature: Crear cuadricula de dimensiones iguales del juego cruadrito
   	And El tamaño de la cuadricula "2*2"
   	When Este calcula la posiciones en 
   	Then Deberia retornar las posiciones:
-		| linea 	| Xinicial | Yinicial | Xfinal | Yfinal |
-		| 1			| 0		   | 0 	 	  | 300    | 0  		|
-		| 2			| 300	   | 0        | 600	   | 0 			|
-		| 3			| 0		   | 0  	  | 0      | 300 		|
-		| 4			| 0 	   | 300      | 0 	   | 600		|
-		| 5			| 300	   | 0 	      | 300    | 300 		|
-		| 6	  		| 300 	   | 300      | 300	   | 600		|
-		| 7			| 0 	   | 300      | 300	   | 300		|
-		| 8			| 300	   | 300      | 600	   | 300		|
-		| 9			| 600	   | 0        | 600	   | 300		|
-		| 10		| 600	   | 300      | 600	   | 600		|
-		| 11		| 0 	   | 600      | 300	   | 600		|
-		| 12		| 300	   | 600      | 600	   | 600		|
+		| linea | Xinicial | Yinicial | Xfinal | Yfinal |
+		| 1		| 0		   | 0 	 	  | 300    | 0  	|
+		| 2		| 300	   | 0        | 600	   | 0 		|
+		| 3		| 0		   | 0  	  | 0      | 300 	|
+		| 4		| 0 	   | 300      | 0 	   | 600	|
+		| 5		| 300	   | 0 	      | 300    | 300 	|
+		| 6	  	| 300 	   | 300      | 300	   | 600	|
+		| 7		| 0 	   | 300      | 300	   | 300	|
+		| 8		| 300	   | 300      | 600	   | 300	|
+		| 9		| 600	   | 0        | 600	   | 300	|
+		| 10	| 600	   | 300      | 600	   | 600	|
+		| 11	| 0 	   | 600      | 300	   | 600	|
+		| 12	| 300	   | 600      | 600	   | 600	|
