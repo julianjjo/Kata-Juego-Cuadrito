@@ -1,4 +1,4 @@
-Una kata para hacer todos los dias con BDD y TDD
+Kata Cuadrito
 ================================================
 
 <img src="https://travis-ci.org/julianjjo/Kata-Juego-Cuadrito.svg?branch=master" alt="">
