@@ -1,0 +1,1 @@
+https://travis-ci.org/julianjjo/Kata-Juego-Cuadrito.svg?branch=master
