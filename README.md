@@ -1,7 +1,7 @@
 Kata Cuadrito
 ================================================
 
-[![Build Status](https://travis-ci.org/julianjjo/Interplantas.svg?branch=master)](https://travis-ci.org/julianjjo/Interplantas)
+[![Build Status](https://travis-ci.org/julianjjo/Kata-Juego-Cuadrito.svg?branch=master)](https://travis-ci.org/julianjjo/Kata-Juego-Cuadrito)
 [![Dependency Status](https://gemnasium.com/julianjjo/Kata-Juego-Cuadrito.svg)](https://gemnasium.com/julianjjo/Kata-Juego-Cuadrito)
 [![Code Climate](https://codeclimate.com/github/julianjjo/Kata-Juego-Cuadrito.png)](https://codeclimate.com/github/julianjjo/Kata-Juego-Cuadrito)
 
