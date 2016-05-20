@@ -23,36 +23,35 @@ Feature: Crear cuadricula de dimensiones iguales del juego cruadrito
 	  	| 23*23		  |	1104    |
 
   Scenario Outline: Calcular tamaño de linea en base al tamaño del lienzo de dimensiones iguales y pares
-  	Given Cuando ingresa el tamaño de la "<cuadricula>" 
+  	Given Cuando ingresa el tamaño de la "<cuadricula>"
   	And El "<tamaño del lienzo>"
   	When calcula el tamaño de la linea
   	Then Deberia retornar el "<tamaño de la linea>"
 
 	  Examples:
-	  	| cuadricula  | tamaño del lienzo | tamaño de la linea | 
+	  	| cuadricula  | tamaño del lienzo | tamaño de la linea |
 	  	| 1*1		  |	100*100		      | 100	               |
 	  	| 2*2		  |	600*600		  	  | 300	               |
-	  	| 3*3 		  |	600*600		  	  | 200	  			   | 
+	  	| 3*3 		  |	600*600		  	  | 200	  			   |
 	  	| 4*4 		  |	200*600		  	  | 50	  			   |
 	  	| 5*5 		  |	600*600		  	  | 120	  			   |
 	  	| 6*6 		  |	1200*1200	  	  | 200	  			   |
 	  	| 7*7 		  |	1400*1400	 	  | 200		 		   |
-	  	| 8*8 		  |	200*200		 	  | 25		 		   | 
+	  	| 8*8 		  |	200*200		 	  | 25		 		   |
 	  	| 9*9 		  |	900*900		 	  | 100		 	 	   |
 	  	| 19*19		  |	1900*1900		  | 100		 	       |
 	  	| 23*23		  |	460*460	 		  | 20  			   |
 
   Scenario: Calcular la ubicacion de los puntos de cada linea
-  	Given Cuando ingresa el tamaño de la linea sea "100" 
-  	And El tamaño del lienzo "600*600"
+  	Given Cuando ingresa el tamaño del lienzo "600*600"
   	And El tamaño de la cuadricula "2*2"
-  	When Este calcula la posiciones en 
+  	When Este calcula la posiciones en
   	Then Deberia retornar las posiciones:
 		| linea | Xinicial | Yinicial | Xfinal | Yfinal |
 		| 1		| 0		   | 0 	 	  | 300    | 0  	|
-		| 2		| 300	   | 0        | 600	   | 0 		|
-		| 3		| 0		   | 0  	  | 0      | 300 	|
-		| 4		| 0 	   | 300      | 0 	   | 600	|
+    | 2		| 0	   | 0        | 0	   | 300 		|
+		| 3		| 0	   | 300        | 300	   | 0 		|
+		| 4		| 300	   | 0  	  | 0      | 300 	|
 		| 5		| 300	   | 0 	      | 300    | 300 	|
 		| 6	  	| 300 	   | 300      | 300	   | 600	|
 		| 7		| 0 	   | 300      | 300	   | 300	|

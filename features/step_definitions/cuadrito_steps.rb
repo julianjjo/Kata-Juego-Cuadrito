@@ -14,7 +14,7 @@ Then(/^Deberia retornar la cantidad de "(.*?)"$/) do |se_espera|
 end
 
 Given(/^El "(.*?)"$/) do |entrada|
-  @entrada1 = entrada 
+  @entrada1 = entrada
 end
 
 When(/^calcula el tamaño de la linea$/) do
@@ -26,11 +26,7 @@ Then(/^Deberia retornar el "(.*?)"$/) do |se_espera|
   expect(@tamaño).to eq(se_espera)
 end
 
-Given(/^Cuando ingresa el tamaño de la linea sea "(.*?)"$/) do |tamano_linea|
-  @tamano_linea = tamano_linea
-end
-
-Given(/^El tamaño del lienzo "(.*?)"$/) do |tamano_lienzo|
+Given(/^Cuando ingresa el tamaño del lienzo "([^"]*)"$/) do |tamano_lienzo|
   @tamano_lienzo = tamano_lienzo
 end
 
@@ -40,7 +36,7 @@ end
 
 When(/^Este calcula la posiciones en$/) do
   cuadricula = Cuadricula.new
-  @posiciones = cuadricula.posiciones_de_x_y_de_las_lineas(@tamano_lienzo, @tamano_cuadricula, @tamano_linea)
+  @posiciones = cuadricula.posiciones_de_x_y_de_las_lineas(@tamano_lienzo, @tamano_cuadricula)
 end
 
 Then(/^Deberia retornar las posiciones:$/) do |se_espera_la_tabla|
